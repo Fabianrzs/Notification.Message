@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="Common.Communication.RabbitMQ" Version="2.1.0" />
 		<PackageReference Include="Hangfire.Core" Version="1.8.*" />
 		<PackageReference Include="Hangfire.SqlServer" Version="1.8.*" />
 		<PackageReference Include="Hangfire.AspNetCore" Version="1.8.*" />
@@ -23,7 +24,6 @@
 
 	</ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\notes-common\Common.Communication.RabbitMQ\Common.Communication.RabbitMQ.csproj" />
     <ProjectReference Include="..\Message.Domain\Message.Domain.csproj" />
   </ItemGroup>
 
