@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Api", "Message.Api\Message.Api.csproj", "{BD5B18FE-04B2-4CB7-A80A-A63468EB35F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.Api", "Message.Api\Message.Api.csproj", "{BD5B18FE-04B2-4CB7-A80A-A63468EB35F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Domain", "Message.Domain\Message.Domain.csproj", "{F72B3323-0D23-4FDB-A5E7-71878DC9AC61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.Domain", "Message.Domain\Message.Domain.csproj", "{F72B3323-0D23-4FDB-A5E7-71878DC9AC61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Infrastructure", "Message.Infrastructure\Message.Infrastructure.csproj", "{F4A2812D-1E6E-4385-854A-11F86C303338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.Infrastructure", "Message.Infrastructure\Message.Infrastructure.csproj", "{F4A2812D-1E6E-4385-854A-11F86C303338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Application", "Message.Application\Message.Application.csproj", "{CDB57B2C-C8CE-46EA-8CCD-B0BFA2D46B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Message.Application", "Message.Application\Message.Application.csproj", "{CDB57B2C-C8CE-46EA-8CCD-B0BFA2D46B88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B7679A33-D4E4-4D0A-A9A7-3D8E87B37165}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1BF0E793-F021-4D68-B1D2-B5DA2E63FA90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Communication.RabbitMQ", "..\notes-common\Common.Communication.RabbitMQ\Common.Communication.RabbitMQ.csproj", "{307EBB81-BA15-413D-98D1-A9A907058DF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Communication", "..\notes-common\Common.Communication\Common.Communication.csproj", "{6937303C-9D85-48C0-9E93-AC0A723F9CB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,14 @@ Global
 		{CDB57B2C-C8CE-46EA-8CCD-B0BFA2D46B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB57B2C-C8CE-46EA-8CCD-B0BFA2D46B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB57B2C-C8CE-46EA-8CCD-B0BFA2D46B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307EBB81-BA15-413D-98D1-A9A907058DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307EBB81-BA15-413D-98D1-A9A907058DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307EBB81-BA15-413D-98D1-A9A907058DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307EBB81-BA15-413D-98D1-A9A907058DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6937303C-9D85-48C0-9E93-AC0A723F9CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6937303C-9D85-48C0-9E93-AC0A723F9CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6937303C-9D85-48C0-9E93-AC0A723F9CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6937303C-9D85-48C0-9E93-AC0A723F9CB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,7 +20,7 @@ public static class BusExtensions
         serviceCollection.Scan(scan => scan.FromAssemblyOf<T>()
             .AddClasses(classes => classes.AssignableTo<IMessageHandler>())
             .AsImplementedInterfaces()
-            .WithTransientLifetime());
+            .WithScopedLifetime());
 
         ServiceProvider sp = serviceCollection.BuildServiceProvider();
         var listHandlers = sp.GetServices<IMessageHandler>();

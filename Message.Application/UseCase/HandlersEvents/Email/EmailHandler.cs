@@ -2,6 +2,7 @@ using Common.Communication.Consumer.Handler;
 using Message.Infrastructure.Adapter;
 using Common.Communication.Messages;
 using Message.Domain.Entities;
+using Reservar.Common.Domain.Entities.Subscription;
 
 namespace Message.Application.UseCase.HandlersEvents;
 

@@ -1,4 +1,5 @@
 ﻿using Message.Domain.Entities;
+using Reservar.Common.Domain.Entities.Subscription;
 
 namespace Message.Application.UseCase.HandlersEvents;
 
