@@ -3,10 +3,11 @@ using Message.Infrastructure.Adapter;
 using Common.Communication.Messages;
 using Message.Domain.Entities;
 using Reservar.Common.Domain.Entities.Subscription;
+using Message.Application.UseCase.DomainEvents;
 
 namespace Message.Application.UseCase.HandlersEvents;
 
-public class EmailHandler : IIntegrationMessageHandler<EmailCommand>
+public class EmailHandler : IRequestHandler<EmailCommand>
 {
     private readonly IEmailService _emailServices;
     private readonly IMapper _mapper;
@@ -17,10 +18,11 @@ public class EmailHandler : IIntegrationMessageHandler<EmailCommand>
         _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
     }
 
-    public async Task Handle(IntegrationMessage<EmailCommand> request, CancellationToken cancelToken = default)
+    public async Task<Unit> Handle(EmailCommand request, CancellationToken cancellationToken)
     {
-        _ = request ?? throw new ArgumentNullException(nameof(request.Content),
-            "request object needed to handle this task");
-        await _emailServices.SendEmail(_mapper.Map<Email>(request.Content));
+        _ = request ?? throw new ArgumentNullException(nameof(request),
+                    "request object needed to handle this task");
+        await _emailServices.SendEmail(_mapper.Map<Email>(request));
+        return Unit.Value;
     }
 }
