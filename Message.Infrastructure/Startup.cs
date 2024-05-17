@@ -22,7 +22,7 @@ public static class Startup
         services.AddEndpointsApiExplorer();
         services.AddSettingdServices(config);
         services.AddSerializer();
-        services.AddHangfire(config);
+        //services.AddHangfire(config);
     }
 
     public static void UseInfrastructure(this IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,7 +34,7 @@ public static class Startup
         
 
         //app.UseHangfireDashboard();
-        app.UseHangfireDashboard("/dashboard");
+        //app.UseHangfireDashboard("/dashboard");
         
         //RecurringJob.AddOrUpdate("testconsole", () => Console.WriteLine("Simple!"), "* * * * 5 ");
         //RecurringJob.AddOrUpdate<RabbitMQMessageConsumer<IntegrationMessage>>("sender email", x => x.StartAsync(default), "*/5 * * * *");

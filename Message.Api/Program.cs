@@ -17,9 +17,6 @@ var app = builder.Build();
 
 
 app.UseInfrastructure(app.Environment);
-var subs = app.Services.GetRequiredService<IMessageConsumer<IntegrationMessage>>();
-subs.StartAsync().Wait();
-
 
 
 app.MapPost("/Send", async (EmailCreateCommand emailDto) =>
